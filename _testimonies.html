@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technoduenight</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/lightslider.css">
+    <link rel="stylesheet" href="./css/font-awesome icons.css">
+    <!-- Jquery Scripts -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/lightslider.js"></script>
+    <script src="./js/jqueryup.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="py-4">
+        <div class="container">
+            <div class="header__main d-flex align-items-center justify-content-between">
+                <a href="#" class="logo">
+                    <img src="./img/logoblue.png" alt="">
+                </a>
+                <div class="header__nav__main">
+                    <div class="header__nav__main__overlay" onclick="headerNavFunc()">
+
+                    </div>
+                    <nav class="header__nav flex-column align-items-center justify-content-center">
+                        <ul class="header__list d-flex align-items-center list-none flex-md-row flex-column">
+                            <span class="closeNavIcon d-md-none d-block" onclick="headerNavFunc()"><i class="fas fa-times"></i></span>
+                            <li class="header__item">
+                                <a href="#" class="header__link active">testimonies</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">about us</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">services</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">product</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="contact__us__btn">contact us</a>
+                            </li>
+                        </ul>
+                        <div class="header__footer d-md-none mt-5">
+                            <div class="mt-5 header__social__icon__list d-flex justify-content-center align-items-center">
+                                <a href="#" class="header__social__icon"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#" class="header__social__icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="header__social__icon"><i class="fab fa-twitter-square"></i></a> <br>
+                            </div>
+                            <p class="footer__txt">Copyright © 2020 rrstek-cctv-All Rights Reserved.</p>
+                        </div>
+                        
+                    </nav>
+                </div>
+                <buttun class="hamburger d-md-none d-block"  onclick="headerNavFunc()">
+                    <i class="fas fa-bars"></i>
+                </buttun>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- testimonies -->
+    <div class="testimonies">
+        <div class="container--showcass">
+            <div class="container">
+                <div class="testimonies__content">
+                    <h1 class="testimonies__title">Our Customers Love us</h1>
+                    <h2 class="testimonies__subtitle">World's largest and Most Trusted Crypto Leder</h2>
+                </div>
+                <div class="img-wrapper__main">
+                    <div class="img-wrapper">
+                       <p class="dots">"</p><h3 class="customer__rewiew">Throught different campaigns, Shortcuts always got the right message and the right tone of voice, relying the world of football, its fans and society</h3><p class="dots text-right">"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonies end -->
+    <!-- footer -->
+    <footer class="container my-5">
+        <div class="d-flex justify-content-between mt-5 mb-4 pt-5">
+            <p class="footer__txt">Terms and Policies</p>
+            <p class="footer__txt">Copyright © 2020 rrstek-cctv-All Rights Reserved.</p>
+            <p class="footer__txt">Cockies and Privacies</p>
+        </div>
+        <div class="footer__social__list d-flex justify-content-center pb-5">
+            <a href="#" class="social__icons"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="social__icons"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social__icons"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+</body>
+
+</html>

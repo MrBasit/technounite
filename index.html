@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technoduenight</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/lightslider.css">
+    <link rel="stylesheet" href="./css/font-awesome icons.css">
+    <!-- Jquery Scripts -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/lightslider.js"></script>
+    <script src="./js/jqueryup.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="py-4">
+        <div class="container">
+            <div class="header__main d-flex align-items-center justify-content-between">
+                <a href="#" class="logo">
+                    <img src="./img/logoblue.png" alt="">
+                </a>
+                <div class="header__nav__main">
+                    <div class="header__nav__main__overlay" onclick="headerNavFunc()">
+
+                    </div>
+                    <nav class="header__nav flex-column align-items-center justify-content-center">
+                        <ul class="header__list d-flex align-items-center list-none flex-md-row flex-column">
+                            <span class="closeNavIcon d-md-none d-block" onclick="headerNavFunc()"><i
+                                    class="fas fa-times"></i></span>
+                            <li class="header__item">
+                                <a href="#" class="header__link">testimonies</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="_aboutus.html" class="header__link">about us</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="index.html" class="header__link active">services</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">product</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="_contectus.html" class="contact__us__btn">contact us</a>
+                            </li>
+                        </ul>
+                        <div class="header__footer d-md-none mt-5">
+                            <div
+                                class="mt-5 header__social__icon__list d-flex justify-content-center align-items-center">
+                                <a href="#" class="header__social__icon"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#" class="header__social__icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="header__social__icon"><i class="fab fa-twitter-square"></i></a> <br>
+                            </div>
+                            <p class="footer__txt">Copyright © 2020 rrstek-cctv-All Rights Reserved.</p>
+                        </div>
+
+                    </nav>
+                </div>
+                <buttun class="hamburger d-md-none d-block" onclick="headerNavFunc()">
+                    <i class="fas fa-bars"></i>
+                </buttun>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- showcase -->
+    <div class="container--showcase showcase__main my-5" id="showcase__slider">
+        <div class="carousel slide showcase__inner" data-ride="carousel" id="slider1">
+            <!-- Indicators -->
+            <ol class="carousel-indicators showcase__slider__indicator">
+                <li data-target="#slider1" data-slide-to="0" class="active"></li>
+                <li data-target="#slider1" data-slide-to="1"></li>
+                <li data-target="#slider1" data-slide-to="2"></li>
+                <li data-target="#slider1" data-slide-to="3"></li>
+                <li data-target="#slider1" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner showcase__inner">
+                <div class="carousel-item active showcase__inner">
+                    <img class="d-block img-fluid" src="./img/showcaseImg1.jpg" alt="First slide">
+                    <div class="carousel-caption w-100 showcase__slider__content">
+                        <h2>Enable Endless <br>Possibilities .</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="./img/showcaseImg1.jpg" alt="Second slide">
+                    <div class="carousel-caption w-100 showcase__slider__content">
+                        <h2>Enable Endless <br>Possibilities .</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="./img/showcaseImg1.jpg" alt="Third slide">
+                    <div class="carousel-caption w-100 showcase__slider__content">
+                        <h2>Enable Endless <br>Possibilities .</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="./img/showcaseImg1.jpg" alt="fourth slide">
+                    <div class="carousel-caption w-100 showcase__slider__content">
+                        <h2>Enable Endless <br>Possibilities .</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="./img/showcaseImg1.jpg" alt="Third slide">
+                    <div class="carousel-caption w-100 showcase__slider__content">
+                        <h2>Enable Endless <br>Possibilities .</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="showcase__content container my-5">
+        <div class="showcase__content__main py-5">
+            <h2 class="showcase__title text-center pt-4 pb-3">we are producing a greate era of technology with there
+                <span>latest
+                    outcomes</span></h2>
+        </div>
+        <ul id="showcase__card__slider" class="cs-hidden">
+            <li class="item-a">
+                <div class="card__slides__card__main">
+                    <div class="card showcase__slider__card">
+                        <img class="card-img-top showcase__slider__img" src="./img/s1.jpg" alt="slides img">
+
+                        <div class="card-body">
+                            <h4 class="card-title mb-3 "> .mobile application developer.</h4>
+                            <p class="card-text mb-2">"to be quite frank, the framework of the essential compnent will
+                                require a vast knowledge.what is more."</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="card__slides__card__main">
+                    <div class="card showcase__slider__card">
+                        <img class="card-img-top showcase__slider__img" src="./img/s2.jpg" alt="slides img">
+
+                        <div class="card-body">
+                            <h4 class="card-title mb-3"> .web <br> developer.</h4>
+                            <p class="card-text mb-2">"to be quite frank, the framework of the essential compnent will
+                                require a vast knowledge.what is more."</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="card__slides__card__main">
+                    <div class="card showcase__slider__card">
+                        <img class="card-img-top showcase__slider__img" src="./img/s3.jpg" alt="slides img">
+
+                        <div class="card-body">
+                            <h4 class="card-title mb-3"> .mobile application developer.</h4>
+                            <p class="card-text mb-2">"to be quite frank, the framework of the essential compnent will
+                                require a vast knowledge.what is more."</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="card__slides__card__main">
+                    <div class="card showcase__slider__card">
+                        <img class="card-img-top showcase__slider__img" src="./img/s4.jpg" alt="slides img">
+
+                        <div class="card-body">
+                            <h4 class="card-title mb-3"> .graphic <br> designer.</h4>
+                            <p class="card-text mb-2">"to be quite frank, the framework of the essential compnent will
+                                require a vast knowledge.what is more."</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- showcase end -->
+    <!-- footer -->
+    <footer class="container my-5">
+        <div class="d-flex justify-content-between mt-5 mb-4 pt-5">
+            <p class="footer__txt">Terms and Policies</p>
+            <p class="footer__txt">Copyright © 2020 rrstek-cctv-All Rights Reserved.</p>
+            <p class="footer__txt">Cockies and Privacies</p>
+        </div>
+        <div class="footer__social__list d-flex justify-content-center pb-5">
+            <a href="#" class="social__icons"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="social__icons"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social__icons"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+</body>
+
+</html>
