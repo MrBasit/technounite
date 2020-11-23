@@ -11,3 +11,35 @@ $(document).ready(function() {
         } 
     });  
 });
+
+// Testimonies Slider
+$(function(){
+    $('.testimonies__slider').slick({
+        centerMode: true,
+        infinite: true,
+        slidesToShow: 3,
+        dots: true,
+        autoplay: true,
+        arrows: false,
+        slidesToScroll: 1,
+        autoplaySpeed: 7000,
+        centerPadding: '0px',
+        responsive: [
+            {
+                centerMode: true,
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            }
+            },
+            {
+                centerMode: true,
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+            }
+            }
+        ]
+
+    });
+});
