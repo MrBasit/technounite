@@ -1,4 +1,20 @@
-// Header Mobile Nav
+// header
+try {
+    // Home Page Header
+    document.addEventListener("scroll", () => {
+        if (scrollY > 100) {
+            document.querySelector("header").classList.add("shadow-header");
+
+        }
+        else {
+            document.querySelector("header").classList.remove("shadow-header");
+        }
+    })
+
+} catch (err) {
+    console.log(err);
+}
+// Mobile Header
 try {
     function headerNavFunc(){
         const menuMain = document.querySelector('.header__nav__main');
@@ -63,11 +79,9 @@ try {
 // product Desc
 try {
     function productDesFunc(path){
-        const bodyScroll = document.querySelector('body');
         const mainPopupBox = document.querySelector('.popupdetail');
         const img = document.querySelector('.popup__img__main img');
         img.src = path;
-        bodyScroll.classList.toggle('active');
         mainPopupBox.classList.toggle('active');
     }
 } catch (err) {

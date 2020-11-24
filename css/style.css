@@ -49,7 +49,6 @@ ul{
     display: inline-block;
     padding: 0.5em 5em;
     height: 54px;
-
     max-width: 100%;
     border: 0;
     border-radius: 54px;
@@ -64,9 +63,20 @@ ul{
     margin: 0 auto;
     width: min(1500px,100%);
 } 
-
+.aboutus,
+.contactus__form,
+.product{
+    padding-top: 8.5em;
+}
 /* Direct Styling ----------------------------------------------- */
 /* header ------------------------------------------------------- */
+header{
+    background: var(--body-bg);
+}
+.shadow-header{
+    border-bottom: .3em solid var(--purple-txt2);
+    box-shadow: 0 0 8px 1rem rgb(218 213 213 / 30%);
+}
 .logo img{
     width: 3rem;
 }
@@ -95,32 +105,33 @@ ul{
 }
 
 .showcase__main{
+    padding-top: 5em;
     max-height: 90vh;
     overflow: hidden;
 }
 .showcase__inner{
     height: 100%;
 }
-#showcase__slider .showcase__slider__content{
+.showcase__slider .showcase__slider__content{
     left: 15% !important;
     top: 8%;
     text-align: left !important;
 }
-#showcase__slider .showcase__slider__indicator{
+.showcase__slider .showcase__slider__indicator{
     margin: 0 !important;
-    left: 15% !important;
-    bottom: 35%;
+    left: 16% !important;
+    bottom: 45%;
     justify-content: flex-start !important;
     align-items: flex-end;
 }
-#showcase__slider .carousel-indicators li{
+.showcase__slider .carousel-indicators li{
     height: .6rem !important;
     width: .15em !important;
     opacity: 1 !important;
     transition: height .5s linear;
 }
-#showcase__slider .carousel-indicators li:hover,
-#showcase__slider .carousel-indicators .active{
+.showcase__slider .carousel-indicators li:hover,
+.showcase__slider .carousel-indicators .active{
     height: 1rem !important;
 }
 .showcase__slider__content h2{
@@ -141,20 +152,20 @@ ul{
 }
 .showcase__slider__card{
     max-height: 50rem;
-    border-color:  #fff !important;
+    border-color:  var(--body-bg) !important;
     margin: 0 .6rem;
 }
 .showcase__slider__card .card-body{
     border: 1px solid rgba(0,0,0,.125);
-    border-top:#fff !important;
-    margin-top: -1rem;
-    padding-top: 1.8em;
+    border-top:var(--body-bg) !important;
+    margin-top: -1.4rem;
+    padding-top: 2.9em;
     color: var(--darkbrown-txt);
-    border-radius: 0 0 30px 30px !important;
+    border-radius: 0 0 1.8rem 1.8rem !important;
 }
 .showcase__slider__img{
     max-height: 11rem;
-    border-radius: 30px !important; 
+    border-radius: 1.8rem !important; 
 }
 .showcase__slider__card .card-title{
    font-size: 1.2rem;
@@ -165,7 +176,11 @@ ul{
    font-weight: 500;
    line-height: 1.8 !important;
 } 
+
 /* aboutus ----------------------------------------------------- */
+.aboutus{
+    margin-top: 2rem;
+}
 .aboutus__showcase{
     background-image: url('../img/aboutbg.jpg');
     background-repeat: no-repeat;
@@ -173,7 +188,7 @@ ul{
     background-size: cover;
 }
 .aboutus__title{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--purple-txt);
     font-weight: 800;
     letter-spacing: 1px;
@@ -194,7 +209,7 @@ ul{
     width: 50px;
     float: left;
     margin: 0 1rem;
-    background:white;
+    background: var(--body-bg);
     overflow: hidden;
     border-radius: 50px;
     cursor: pointer;
@@ -209,10 +224,10 @@ ul{
     border-bottom: 1px solid black;
 }
 .wrapper #a:hover{
-    border-color: #4267b2;
-}
-.wrapper #b:hover{
     border-color: #01AB2A;
+}
+.wrapper #b:hover{ 
+    border-color: #4267b2;
 }
 .wrapper #c:hover{
     border-color: #25d365;
@@ -228,25 +243,20 @@ ul{
     transition: all 0.3s ease-out;
 
 }
-.wrapper .main__services__social__button:nth-child(1):hover .icon{
-    background:#4267b2;
-}
-.wrapper .main__services__social__button:nth-child(2):hover .icon{
+.wrapper .main__services__social__button.whatsapps:hover .icon{
     background:#01AB2A;
 }
-.wrapper .main__services__social__button:nth-child(3):hover .icon{
-    background:#25d366;
+.wrapper .main__services__social__button.facebooks:hover .icon{
+    background:#4267b2;
 }
 
-.wrapper .main__services__social__button .icon #fiverrwhite, #whatsappwhite, #facebookwhite{
+.wrapper .main__services__social__button .icon #whatsappwhite, #facebookwhite{
     display: none;
 }
 .wrapper .main__services__social__button .icon #facebook,
 .wrapper .main__services__social__button .icon #facebookwhite,
 .wrapper .main__services__social__button .icon #whatsapp,
-.wrapper .main__services__social__button .icon #whatsappwhite,
-.wrapper .main__services__social__button .icon #fiverr,
-.wrapper .main__services__social__button .icon #fiverrwhite{
+.wrapper .main__services__social__button .icon #whatsappwhite{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -258,24 +268,13 @@ ul{
 .wrapper .main__services__social__button .icon #whatsapp{
     width: 24px;
 }
-.wrapper .main__services__social__button .icon #fiverr{
-    width:1rem;
-}
 .wrapper .main__services__social__button:hover .icon #facebookwhite{
     display: inline-block;
     width: 10px;
 }
-.wrapper .main__services__social__button:hover .icon #fiverrwhite{
-    display: inline-block;
-    width: 17px;
-}
 .wrapper .main__services__social__button:hover .icon #whatsappwhite{
     display: inline-block;
     width: 24px;
-}
-
-.wrapper .main__services__social__button:hover .icon #fiverr{
-    display: none;
 }
 .wrapper .main__services__social__button:hover .icon #facebook{
     display: none;
@@ -295,14 +294,11 @@ ul{
 .wrapper .main__services__social__button a:hover{
     text-decoration: underline;
 }
-.wrapper .main__services__social__button:nth-child(1) a{
+.wrapper .main__services__social__button.facebooks a{
     color:#4267b2;
 }
-.wrapper .main__services__social__button:nth-child(2) a{
+.wrapper .main__services__social__button.whatsapps a{
     color:#01AB2A;
-}
-.wrapper .main__services__social__button:nth-child(3) a{
-    color:#25d365;
 }
 @media (max-width:500px){
     .wrapper .main__services__social__button:hover{
@@ -328,20 +324,17 @@ ul{
 .wrapper .main__services__social__button .icon #whatsapp{
     width: 16px;
 }
-.wrapper .main__services__social__button .icon #fiverr{
-    width: .7rem;
-}
 .wrapper .main__services__social__button:hover .icon #facebookwhite{
     width: 7px;
-}
-.wrapper .main__services__social__button:hover .icon #fiverrwhite{
-    width: 11px;
 }
 .wrapper .main__services__social__button:hover .icon #whatsappwhite{
     width: 16px;
 }
 }
 /* contact us --------------------------------------------------- */
+.contactus__form{
+    margin-top: 5rem;
+}
 .contactus__title{
     font-size: 3rem;
     font-weight: 700;
@@ -427,8 +420,9 @@ ul{
     background-repeat: no-repeat;
     background-size: 400px 500px;
     background-position: 90% 10%;
-    padding-top: 12em ;
+    padding-top: 15em ;
     margin-bottom: 4rem;
+    margin-top: 8rem;
 }
 .testimonies__title{
     font-size: 2.3rem;
@@ -581,6 +575,9 @@ ul{
     z-index: -2;
 }
 /* product ------------------------------------------------------- */
+.product{
+    padding-top: 3em;
+}
 .main___product__card{
     justify-content: space-around;
 }
@@ -615,13 +612,13 @@ ul{
 .product__content ul.nav__dots{
     justify-content: center;
     align-items: center;
-    height: 1rem;
+    height: 1.4rem;
     margin-top: 6rem !important;
 }
 .product__content ul.nav__dots .dots{
     background-color: black;
-    height: .5rem;
-    width: .5rem;
+    height: .7rem;
+    width: .7rem;
     transition: all .3s ease;
     padding: 0;
     border: 0;
@@ -632,7 +629,7 @@ ul{
 }
 .product__content ul.nav__dots .dots:hover,
 .product__content ul.nav__dots .dots.active{
-    transform: scale(1.3);
+    transform: scale(1.4);
    
 }
 .tab-content .fade.show{
@@ -711,6 +708,15 @@ ul{
     font-weight: 450;
     margin-bottom: .3rem;
     display: inline-block;
+    background: none;
+    border: none;
+    outline: none;
+}
+.p__card__link:hover{
+    text-decoration: underline;
+}
+.p__card__link:focus{
+    outline: none;
 }
 .ep{
     color: var(--darkbrown-txt3);
@@ -729,6 +735,9 @@ ul{
 }
 .pd:hover{
     color: var(--lightgrey-txt5);
+}
+.pd,.el,.ep{
+    width: max-content;
 }
 /* PopUpBox Detail Box */
 body.active{
@@ -803,7 +812,7 @@ scrollbar-width: none;  /* Firefox */
 }
 .popupDetal__close span i{
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--body-bg);
 }
 .veiw__more__btn{
     position: fixed;
@@ -830,11 +839,7 @@ scrollbar-width: none;  /* Firefox */
 
 
 /* Media Queries ------------------------------------------------ */
-/* Only For large Desktop */
-@media (min-width: 992px){
-    /*  */
-}
-/* Only For Small Desktop */
+/* Small Desktop */
 @media (min-width: 768px){
    /* header */
    .contact__us__btn{
@@ -859,6 +864,7 @@ scrollbar-width: none;  /* Firefox */
         flex: 0 0 31.333333%  !important;
         max-width: 31.333333%  !important;
     }
+    
 
 }
 /* Responsive Large Tab*/
@@ -867,8 +873,8 @@ scrollbar-width: none;  /* Firefox */
         font-size: 15.8px;
     }
     /* showcase */
-    #showcase__slider .showcase__slider__indicator{
-        bottom: 22%;
+    .showcase__slider .showcase__slider__indicator{
+        bottom: 15%;
     }
     /* testimonies */
     .img-wrapper__main{
@@ -884,14 +890,15 @@ scrollbar-width: none;  /* Firefox */
     }
     /* product */
     .product__card__body {
-        padding: 1em 1.7em !important;
+        padding: 1.6em 1em !important;
     }
     .product__card__title{
         margin-bottom: .9rem;
     }
     .p__card__link {
-        font-size: .6rem;
+        font-size: .9rem;
     }
+    
 }
 
 /* Responsive Small Tab */
@@ -1001,6 +1008,7 @@ scrollbar-width: none;  /* Firefox */
         color: var(--body-bg);
         margin-top: 1rem;
     }
+    
     /* testimonise */
     .testimonies{
         background-size: 240px 300px;
@@ -1012,6 +1020,13 @@ scrollbar-width: none;  /* Firefox */
         flex: 0 0 45%  !important;
         max-width: 45%  !important;
     }
+    .p__card__link {
+        font-size: 1rem;
+    }
+    .product__card__body {
+        padding: 2em 2em !important;
+    }
+    
     
 
 }
@@ -1030,6 +1045,10 @@ scrollbar-width: none;  /* Firefox */
         right: -40%;
         top: -25%;
     }
+    /* services */
+    .showcase__title{
+        padding: 0 1em;
+    }
     /* testimonise */
     .img-wrapper{
         margin: 0 auto;
@@ -1044,7 +1063,9 @@ scrollbar-width: none;  /* Firefox */
         flex: 0 0 44%  !important;
         max-width: 44%  !important;
     }
-
+    .popupDetal__close{
+        right: 1.8rem;
+    }
 }
 /* Responsive Small Mobile */
 @media (max-width: 295px){
@@ -1059,6 +1080,5 @@ scrollbar-width: none;  /* Firefox */
         flex: 0 0 43%  !important;
         max-width: 43%  !important;
     }
-    
     
 }

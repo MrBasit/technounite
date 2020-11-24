@@ -43,3 +43,16 @@ $(function(){
 
     });
 });
+// client reviews Slider
+$(function(){
+    $('.client__reviews__slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        dots: true,
+        autoplay: true,
+        arrows: false,
+        slidesToScroll: 1,
+        autoplaySpeed: 5000,
+    });
+});
+
