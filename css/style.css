@@ -86,13 +86,13 @@ header{
     cursor: pointer;
 }
 .header__link{
-    font-size: 1rem;
+    font-size: .9rem;
     color: var(--lightgrey-txt);
     font-weight: 450;
     transition: color .4s linear;
 }
 .header__list .header__item + .header__item{
-    margin-left: 3rem;
+    margin-left: 2rem;
 }   
 .header__link:hover{
     color: var(--purple-txt) !important;
@@ -176,6 +176,20 @@ header{
    font-weight: 500;
    line-height: 1.8 !important;
 } 
+.showcase__contact__form{
+    padding-left: 1em;
+    padding-top: 3em;
+}
+
+.showcase__contact__form .form__group .form__group--animate-label input{
+    font-size: .9rem;
+}
+
+.showcase__contact__form .form__group .form__group--animate-label input:focus + label,
+.showcase__contact__form .form__group .form__group--animate-label input:valid + label{
+    font-size: .8rem!important;
+    transform: translateY(-1.3rem) !important;
+}
 
 /* aboutus ----------------------------------------------------- */
 .aboutus{
@@ -398,6 +412,8 @@ header{
 .form__group .form__group--animate-label label.msg{
     top: 15%;
 }
+
+.sc__contactformbtn,
 .contactformbtn{
     padding: .9em;
     width: 100%;
@@ -409,6 +425,12 @@ header{
     font-size: 1rem;
     border-radius: 15px;
 }
+
+.sc__contactformbtn{
+    padding: .65em .9em;
+}
+
+.sc__contactformbtn:focus,
 .contactformbtn:focus{
    outline: none;
 }
@@ -690,7 +712,6 @@ header{
     background-color: var(--body-bg);
     z-index: 12;
     border-radius: 0 0 1.8rem 1.8rem;
-
     box-shadow: 0 0 2px 2px rgb(218 213 213 / 30%),0 0 7px 4px rgb(218 213 213 / 30%);
     opacity: 0;
 }
@@ -711,6 +732,7 @@ header{
     background: none;
     border: none;
     outline: none;
+    padding: 0;
 }
 .p__card__link:hover{
     text-decoration: underline;
@@ -738,6 +760,9 @@ header{
 }
 .pd,.el,.ep{
     width: max-content;
+}
+.padding-is{
+    padding-left: 1em !important;
 }
 /* PopUpBox Detail Box */
 body.active{
@@ -872,6 +897,14 @@ scrollbar-width: none;  /* Firefox */
     html{
         font-size: 15.8px;
     }
+    /* header */
+    .header__link{
+        font-size: .8rem;
+        width: max-content;
+    }
+    .header__list .header__item + .header__item{
+        margin-left: 1.5rem;
+    } 
     /* showcase */
     .showcase__slider .showcase__slider__indicator{
         bottom: 15%;
