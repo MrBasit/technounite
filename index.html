@@ -40,21 +40,17 @@
                                 <i class="fas fa-times"></i>
                             </span>
                             <li class="header__item">
-                                <a href="#ld" class="nav-link header__link ">landing page</a>
-                            </li>
-                            <li class="header__item">
                                 <a href="#service" class="nav-link header__link ">services</a>
                             </li>
                             <li class="header__item">
                                 <a href="#product" class="nav-link header__link">product</a>
                             </li>
                             <li class="header__item">
-                                <a href="#testimonies" class="nav-link header__link">testimonies</a>
-                            </li>
-                            <li class="header__item">
                                 <a href="#aboutus" class="nav-link header__link">about us</a>
                             </li>
-
+                            <li class="header__item">
+                                <a href="#testimonies" class="nav-link header__link">testimonies</a>
+                            </li>
 
                             <li class="header__item">
                                 <a href="#contect" class="nav-link contact__us__btn">contact us</a>
@@ -80,7 +76,7 @@
     </header>
     <!-- header end -->
     <!-- showcase -->
-    <div id="ld" class="container--showcase showcase__main mb-4 showcase__slider">
+    <div id="service" class="container--showcase showcase__main mb-4 showcase__slider">
         <div class="carousel slide showcase__inner" data-ride="carousel" id="slider1">
             <!-- Indicators -->
             <ol class="carousel-indicators showcase__slider__indicator">
@@ -124,7 +120,7 @@
             </div>
         </div>
     </div>
-    <div id="service" class="showcase__content container mb-5 pt-5">
+    <div class="showcase__content container mb-5 pt-5">
         <div class="showcase__content__main py-5">
             <h2 class="showcase__title text-center pt-4 pb-3">we are producing a greate era of <br> technology with
                 there
@@ -197,27 +193,30 @@
 
         </ul>
         <div class="showcase__contact__form">
+            <h1 class="showcase__form__title">
+                Submit Your Queries
+            </h1>
             <form method="post" name="showcase__contact__form" id="showcase__contact__form">
                 <div class="row form__group">
-                    <div class="col-6 col-lg-3">
+                    <div class="col-6">
                         <div class="form__group--animate-label mb-3">
                             <input name="sc_name" type="text" id="sc_name" required="required">
                             <label for="sc_name">Name</label>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-3">
+                    <div class="col-6">
                         <div class="form__group--animate-label mb-3">
                             <input name="sc_phone" type="tel" id="sc_phone" required="required">
                             <label for="sc_phone">Phone</label>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12">
                         <div class="form__group--animate-label mb-3">
                             <input name="sc_desc" type="text" id="sc_desc" required="required">
                             <label for="sc_desc">Detail</label>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-6">
+                    <div class="col-6">
                         <button class="sc__contactformbtn">Submit</button>
                     </div>
                 </div>
@@ -823,8 +822,61 @@
         </div>
     </div>
     <!-- product end -->
-    <!-- testimonies -->
-    <div id="testimonies" class="testimonies container--showcase">
+    <!-- aboutus -->
+    <div id="aboutus" class="aboutus">
+        <div class="aboutus__content container">
+            <h1 class="aboutus__title mb-4">
+                welcome.
+            </h1>
+            <p class="aboutus__text">
+                We are digital age Tech agency. We define, design, and develop applications across all platform. With a
+                solid team of Tech enthusiasts and a wide range of cpabilities wo can bring any idea to life.
+            </p>
+            <p class="aboutus__text mb-5 pb-4">
+                Binding capabilities, we deliver digital solutions from end to end. Ideate, conceptualize and develop
+                strategies to deliver immersive results.
+            </p>
+        </div>
+        <div class="aboutus__showcase container--showcase py-5">
+            <div class="aboutus__showcase_content py-5">
+                <div class="main__services__social d-flex justify-content-center align-items-center">
+                    <div class="wrapper d-flex justify-content-between align-items-center">
+                        <div class="main__services__social__button whatsapps" id="a">
+                            <div class="icon">
+                                <img id="whatsapp" src="./img/whatsapp.png">
+                                <img id="whatsappwhite" src="./img/whatsappwhite.png">
+                            </div>
+                            <div>
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                        <div class="main__services__social__button facebooks" id="b">
+                            <div class="icon">
+                                <img id="facebook" src="./img/facebook.png">
+                                <img id="facebookwhite" src="./img/facebookwhite.png">
+                            </div>
+                            <div>
+                                <a href="#">Contact </a>
+                            </div>
+
+                        </div>
+                        <div class="main__services__social__button whatsapps" id="c">
+                            <div class="icon">
+                                <img id="whatsapp" src="./img/whatsapp.png">
+                                <img id="whatsappwhite" src="./img/whatsappwhite.png">
+                            </div>
+                            <div>
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- aboutus end -->
+     <!-- testimonies -->
+     <div id="testimonies" class="testimonies container--showcase">
         <div class="main__testimonial">
             <div class="testimonies__content text-center">
                 <h1 class="testimonies__title">Our Customers Love us</h1>
@@ -902,59 +954,6 @@
         </div>
     </div>
     <!-- testimonies end -->
-    <!-- aboutus -->
-    <div id="aboutus" class="aboutus">
-        <div class="aboutus__content container">
-            <h1 class="aboutus__title mb-4">
-                welcome.
-            </h1>
-            <p class="aboutus__text">
-                We are digital age Tech agency. We define, design, and develop applications across all platform. With a
-                solid team of Tech enthusiasts and a wide range of cpabilities wo can bring any idea to life.
-            </p>
-            <p class="aboutus__text mb-5 pb-4">
-                Binding capabilities, we deliver digital solutions from end to end. Ideate, conceptualize and develop
-                strategies to deliver immersive results.
-            </p>
-        </div>
-        <div class="aboutus__showcase container--showcase py-5">
-            <div class="aboutus__showcase_content py-5">
-                <div class="main__services__social d-flex justify-content-center align-items-center">
-                    <div class="wrapper d-flex justify-content-between align-items-center">
-                        <div class="main__services__social__button whatsapps" id="a">
-                            <div class="icon">
-                                <img id="whatsapp" src="./img/whatsapp.png">
-                                <img id="whatsappwhite" src="./img/whatsappwhite.png">
-                            </div>
-                            <div>
-                                <a href="#">Contact</a>
-                            </div>
-                        </div>
-                        <div class="main__services__social__button facebooks" id="b">
-                            <div class="icon">
-                                <img id="facebook" src="./img/facebook.png">
-                                <img id="facebookwhite" src="./img/facebookwhite.png">
-                            </div>
-                            <div>
-                                <a href="#">Contact </a>
-                            </div>
-
-                        </div>
-                        <div class="main__services__social__button whatsapps" id="c">
-                            <div class="icon">
-                                <img id="whatsapp" src="./img/whatsapp.png">
-                                <img id="whatsappwhite" src="./img/whatsappwhite.png">
-                            </div>
-                            <div>
-                                <a href="#">Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- aboutus end -->
     <!-- contact -->
     <div id="contect" class="contactus__form container">
         <h1 class="contactus__title mb-5">Contact Us</h1>

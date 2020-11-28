@@ -86,7 +86,7 @@ header{
     cursor: pointer;
 }
 .header__link{
-    font-size: .9rem;
+    font-size: 1rem;
     color: var(--lightgrey-txt);
     font-weight: 450;
     transition: color .4s linear;
@@ -167,6 +167,7 @@ header{
     max-height: 11rem;
     border-radius: 1.8rem !important; 
 }
+
 .showcase__slider__card .card-title{
    font-size: 1.2rem;
    font-weight: 700;
@@ -176,6 +177,12 @@ header{
    font-weight: 500;
    line-height: 1.8 !important;
 } 
+.showcase__form__title{
+    font-size: 2rem;
+    color: var(--black-txt);
+    font-weight: 700;
+    margin: 2rem 0;
+}
 .showcase__contact__form{
     padding-left: 1em;
     padding-top: 3em;
