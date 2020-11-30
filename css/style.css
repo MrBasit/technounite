@@ -148,7 +148,10 @@ header{
     color: var(--purple-txt);
 }
 .card__slides__card__main{
-    width: 17rem;
+    width: 15rem;
+}
+.showcase__card__slider_main{
+    padding-left: 0 !important;
 }
 .showcase__slider__card{
     max-height: 50rem;
@@ -164,7 +167,7 @@ header{
     border-radius: 0 0 1.8rem 1.8rem !important;
 }
 .showcase__slider__img{
-    max-height: 11rem;
+    height: 11.5rem;
     border-radius: 1.8rem !important; 
 }
 
@@ -178,25 +181,58 @@ header{
    line-height: 1.8 !important;
 } 
 .showcase__form__title{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--black-txt);
     font-weight: 700;
-    margin: 2rem 0;
+    margin: 0 0 1.6rem 0;
+    line-height: .9;
 }
 .showcase__contact__form{
-    padding-left: 1em;
-    padding-top: 3em;
+    padding-left: .5em;
 }
 
-.showcase__contact__form .form__group .form__group--animate-label input{
-    font-size: .9rem;
+
+.showcase__contact__form .form__group .form__group--animate-label label.sc_desc{
+    top: 15%;
 }
 
 .showcase__contact__form .form__group .form__group--animate-label input:focus + label,
 .showcase__contact__form .form__group .form__group--animate-label input:valid + label{
-    font-size: .8rem!important;
-    transform: translateY(-1.3rem) !important;
+    font-size: .73rem!important;
+    transform: translateY(-1rem) !important;
 }
+.showcase__contact__form .form__group .form__group--animate-label textarea:focus + label,
+.showcase__contact__form .form__group .form__group--animate-label textarea:valid + label{
+    font-size: .73rem!important;
+    transform: translateY(-1.1rem) !important;
+}
+/*  */
+
+.showcase__contact__form .form__group .form__group--animate-label input{
+    height: 2.4rem;
+    padding: .9em;
+    padding-top: 1.8em !important;
+    font-size: .8rem;
+    letter-spacing: .5px;
+    border-radius: .4rem;
+}
+.showcase__contact__form .form__group .form__group--animate-label textarea{
+    padding: 1em .7em;
+    line-height: 1.2;
+    font-size: .8rem;
+    letter-spacing: .5px;
+    border-radius: .4rem;
+}
+
+.showcase__contact__form .form__group .form__group--animate-label label{
+    top: 55%;
+    margin: -.8rem 0 0;
+    left: .5rem;
+    font-size: .8rem;
+    padding: 0 .4em;
+  
+}
+
 
 /* aboutus ----------------------------------------------------- */
 .aboutus{
@@ -372,7 +408,7 @@ header{
     padding: 1em;
     padding-top: 2em !important;
     border: 1px solid var(--lightgrey-txt2);
-    color: var(--lightgrey-txt3);
+    color: var(--black-txt);
     line-height: 2;
     font-size: 1rem;
     border-radius: 15px;
@@ -380,10 +416,10 @@ header{
 .form__group .form__group--animate-label textarea{
     padding: .7em 1em;
     border: 1px solid var(--lightgrey-txt2);
-    color: var(--lightgrey-txt3);
+    color: var(--black-txt);
     line-height: 2;
     font-size: 1rem;
-    border-radius: 15px;
+    border-radius: 16px;
 }
 
 .form__group .form__group--animate-label label{
@@ -422,19 +458,24 @@ header{
 
 .sc__contactformbtn,
 .contactformbtn{
-    padding: .9em;
+    padding: .7em;
     width: 100%;
     border: none;
     outline: none;
     background: var(--black-txt);
     color: var(--body-bg);
     font-weight: 700;
-    font-size: 1rem;
-    border-radius: 15px;
+    font-size: 1.2rem;
+    border-radius: .7rem;
+    letter-spacing: .5px;
 }
 
 .sc__contactformbtn{
-    padding: .65em .9em;
+    padding: .45em .9em;
+    font-size: .88rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    
 }
 
 .sc__contactformbtn:focus,
