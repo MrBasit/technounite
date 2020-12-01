@@ -967,7 +967,7 @@ scrollbar-width: none;  /* Firefox */
         width: 16rem;
     }
     .testimonies{
-        background-size: 320px 400px;
+        background-size: 340px 440px;
     }
     /* product */
     .product__card__body {
@@ -1135,7 +1135,7 @@ scrollbar-width: none;  /* Firefox */
         margin: 0 auto;
     }
     .testimonies{
-        background-size: 160px 200px;
+        background-size: 210px 250px;
     }
     /* product */
     .product__col{
