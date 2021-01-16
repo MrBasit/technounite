@@ -66,7 +66,7 @@ ul{
 .aboutus,
 .contactus__form,
 .product{
-    padding-top: 8.5em;
+    padding-top: 5em;
 }
 /* Direct Styling ----------------------------------------------- */
 /* header ------------------------------------------------------- */
@@ -78,7 +78,7 @@ header{
     box-shadow: 0 0 8px 1rem rgb(218 213 213 / 30%);
 }
 .logo img{
-    width: 3rem;
+    width: 5rem;
 }
 .hamburger{
     font-size: 2rem;
@@ -121,7 +121,7 @@ header{
     background-image: url('../img/Slider_UIUX.png');
 }
 .showcase__main{
-    padding-top: 5em;
+    padding-top: 2.5em;
     overflow: hidden;
 }
 .showcase__slider .showcase__slider__content{
@@ -162,15 +162,22 @@ header{
     color: var(--purple-txt);
 }
 
-
 .card__slides__card__main{
     width: 15rem;
+    /* height: 100%; */
 }
 .showcase__card__slider_main{
     padding-left: 0 !important;
 }
+#showcase__card__slider{
+    height: 100% !important;
+}
+#showcase__card__slider li{
+    /* height: 100%; */
+}
 .showcase__slider__card{
     max-height: 35rem;
+    height: 100% !important;
     border-color:  var(--body-bg) !important;
     margin: 0 .6rem;
 }
@@ -186,7 +193,6 @@ header{
     height: 11.5rem;
     border-radius: 1.8rem !important; 
 }
-
 .showcase__slider__card .card-title{
    font-size: 1.2rem;
    font-weight: 700;
@@ -203,10 +209,11 @@ header{
     margin: 0 0 1.6rem 0;
     line-height: .9;
 }
+
+/* Form */
 .showcase__contact__form{
     padding-left: .5em;
 }
-
 
 .showcase__contact__form .form__group .form__group--animate-label label.sc_desc{
     top: 15%;
@@ -251,9 +258,7 @@ header{
 
 
 /* aboutus ----------------------------------------------------- */
-.aboutus{
-    margin-top: 2rem;
-}
+
 .aboutus__showcase{
     background-image: url('../img/aboutbg.jpg');
     background-repeat: no-repeat;
@@ -405,9 +410,7 @@ header{
 }
 }
 /* contact us --------------------------------------------------- */
-.contactus__form{
-    margin-top: 5rem;
-}
+
 .contactus__title{
     font-size: 3rem;
     font-weight: 700;
@@ -508,7 +511,7 @@ header{
     background-position: 90% 10%;
     padding-top: 15em ;
     margin-bottom: 4rem;
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 .testimonies__title{
     font-size: 2.3rem;
@@ -662,7 +665,7 @@ header{
 }
 /* product ------------------------------------------------------- */
 .product{
-    padding-top: 3em;
+    padding-top: .05em;
 }
 .main___product__card{
     justify-content: space-around;
@@ -671,15 +674,16 @@ header{
     font-size: 3rem;
     font-weight: 600;
     color: var(--purple-txt);
-    margin-top: 5rem;
+    margin-top: 3rem;
     
 }
 .product__content{
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 .product__content ul.nav__txt{
     justify-content: space-between;
-    margin-bottom: 2rem !important;
+    margin-bottom: 1rem !important;
+    padding: 0 3em;
 }
 .product__content ul.nav__txt li .nav-link{
     color: var(--lightgrey-txt);

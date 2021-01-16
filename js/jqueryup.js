@@ -17,7 +17,7 @@ $(function(){
     $('.testimonies__slider').slick({
         centerMode: true,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 1,
         dots: true,
         autoplay: true,
         arrows: false,
@@ -29,7 +29,7 @@ $(function(){
                 centerMode: true,
             breakpoint: 768,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 1,
             }
             },
             {
