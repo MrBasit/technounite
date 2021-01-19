@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Partner - Digital Ad Agency</title>
+    <!-- Fav Icon -->
+    <link rel="icon" href="./img/logoblue_fav.png">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/lightslider.css">
+    <link rel="stylesheet" href="./css/font-awesome icons.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <!-- Jquery Scripts -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/lightslider.js"></script>
+    <script src="./js/jqueryup.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+     <!-- header -->
+     <header class="py-3 sticky-top">
+        <div class="container">
+            <div class="header__main d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo">
+                    <img src="./img/logoblue.png" alt="">
+                </a>
+                <div class="header__nav__main">
+                    <div class="header__nav__main__overlay" onclick="headerNavFunc()">
+
+                    </div>
+                    <nav id="headerNav"
+                        class="header__nav flex-column align-items-center justify-content-center">
+                        <ul class="header__list d-flex align-items-center list-none flex-md-row flex-column">
+                            <span class="closeNavIcon d-md-none d-block" onclick="headerNavFunc()">
+                                <i class="fas fa-times"></i>
+                            </span>
+                            <li class="header__item">
+                                <a href="#service" class="nav-link header__link ">Services</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#product" class="nav-link header__link">Works</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#aboutus" class="nav-link header__link">About Us</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#testimonies" class="nav-link header__link">Client's Word</a>
+                            </li>
+
+                            <li class="header__item">
+                                <a href="#contect" class="nav-link contact__us__btn">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="header__footer d-md-none mt-5">
+                            <div
+                                class="mt-5 header__social__icon__list d-flex justify-content-center align-items-center">
+                                <a href="#" class="header__social__icon"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#" class="header__social__icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="header__social__icon"><i class="fab fa-twitter-square"></i></a> <br>
+                            </div>
+                            <p class="footer__txt">Copyright © 2021 Adpartner. All Rights Reserved.</p>
+                        </div>
+
+                    </nav>
+                </div>
+                <buttun class="hamburger d-md-none d-block" onclick="headerNavFunc()">
+                    <i class="fas fa-bars"></i>
+                </buttun>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- privacy -->
+    <div id="privacy">
+        <div class="container">
+            <h3 class="pricay_title">
+                Private Data We Receive And Collect
+            </h3>
+            <p class="privacy_text privacy_pd_x">
+                Technounite also automatically collects and receives certain information from your computer or mobile device, including the activities you perform on our Website, the Platforms, and the Applications, the type of hardware and software you are using (for example, your operating system or browser), and information obtained from cookies. For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page from which you came, the regions from which you navigate the web page, and the web page(s) you access (as applicable).
+            </p>
+            <p class="privacy_text privacy_pd_x">
+                When you first register for a Technounite account, and when you use the Services, we collect some When you first register for a Technounite account, and when you use the Services, we collect some 
+                <a class="privacy_link" href="#">Personal Information</a>
+                about you such as:
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body privacy_text">The geographic area where you use your computer and mobile devices</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body privacy_text">Your full name, username, and email address and other contact details</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body privacy_text">A unique Technounite user ID (an alphanumeric string) which is assigned to you upon registration</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body privacy_text">Other optional information as part of your account profile</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body privacy_text">Your IP Address and, when applicable, timestamp related to your consent and confirmation of consent</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body privacy_text">Other information submitted by you or your organizational representatives via various methods</div>
+                        </li>
+                    </ul>
+                </div> <!-- end of col -->
+
+                <div class="col-md-6">
+                    <ul class="list-unstyled li-space-lg indent">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body privacy_text">Your billing address and any necessary other information to complete any financial transaction, and when making purchases through the Services, we may also collect your credit card or PayPal information</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body privacy_text">User generated content (such as messages, posts, comments, pages, profiles, images, feeds or communications exchanged on the Supported Platforms)</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body privacy_text">Images or other files that you may publish via our Services</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body privacy_text">Information (such as messages, posts, comments, pages, profiles, images) we may receive relating to communications you send us, such as queries or comments concerning</div>
+                        </li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="text-container">
+                <h3 class="pricay_title ">How We Use Technounite </h3>
+                <p class="privacy_text privacy_pd_x">Technounite SaaS uses visitors' data for the following general purposes:</p>
+                <ol class="privacy_list">
+                    <li class="privacy_text">To identify you when you login to your account</li>
+                    <li class="privacy_text">To enable us to operate the Services and provide them to you</li>
+                    <li class="privacy_text">To verify your transactions and for purchase confirmation, billing, security, and authentication (including security tokens for communication with installed)</li>
+                    <li class="privacy_text">To analyze the Website or the other Services and information about our visitors and users, including research into our user demographics and user behaviour in order to improve our content and Services</li>
+                    <li class="privacy_text">To contact you about your account and provide customer service support, including responding to your comments and questions</li>
+                    <li class="privacy_text">To share aggregate (non-identifiable) statistics about users of the Services to prospective advertisers and partners</li>
+                    <li class="privacy_text">To keep you informed about the Services, features, surveys, newsletters, offers, surveys, newsletters, offers, contests and events we think you may find useful or which you have requested from us</li>
+                   
+                    <li class="privacy_text">To better understand your needs and the needs of users in the aggregate, diagnose problems, analyze trends, improve the features and usability of the Services, and better understand and market to our customers and users</li>
+                    <li class="privacy_text">To keep the Services safe and secure</li>
+                    <li class="privacy_text">We also use non-identifiable information gathered for statistical purposes to keep track of the number of visits to the Services with a view to introducing improvements and improving usability of the Services. We may share this type of statistical data so that our partners also understand how often people use the Services, so that they, too, may provide you with an optimal experience.</li>
+                </ol>
+            </div> <!-- end of text-container -->
+
+            <div class="text-container">
+                <h3 class="pricay_title">Customer Content We Process For Customers</h3>
+                <p class="privacy_text privacy_pd_x">Technounite is a website. By its nature, Services enable our customers to promote their products and services integrate with hundreds of business applications that they already use, all in one place.</p>
+                <p class="privacy_text privacy_pd_x">Services help our customers promote their products and services, marketing and advertising; engaging audiences; scheduling and publishing messages; and analyze the results.</p>
+            </div> <!-- end of text container -->
+
+            <div class="text-container">
+                <h3 class="pricay_title">Consent Of Using Technounite</h3>
+                <p class="privacy_text mb-1 privacy_pd_x">By using any of the Services, or submitting or collecting any Personal Information via the Services, you consent to the collection, transfer, storage disclosure, and use of your Personal Information in the manner set out in this Privacy Policy. If you do not consent to the use of your Personal Information in these ways, please stop using the Services.</p>
+            </div> <!-- end of text-container -->
+        </div>
+    </div>
+    <!-- privacy end -->
+
+    <!-- footer -->
+    <footer class="container my-1">
+        <div class="d-flex justify-content-between mt-5 mb-4 pt-5">
+            <p class="footer__txt">Terms and Policies</p>
+            <p class="footer__txt">Copyright © 2021 Ad Partner. All Rights Reserved.</p>
+            <a class="footer__txt" href="./privacy.html">Cockies and Privacies</a>
+        </div>
+        <div class="footer__social__list d-flex justify-content-center pb-5">
+            <a href="#" class="social__icons"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="social__icons"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social__icons"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </footer>
+    <!-- footer end -->
+</body>
+</html>

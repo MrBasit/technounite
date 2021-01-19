@@ -40,10 +40,14 @@ ul{
     --lightgrey-txt5: #9c9c9c;
     --testimonies-card2: #503bff;
     --testimonies-card3: #0d2baa;
+    --lightblue: #007bff;
     --black-txt: #000000;
     --darkbrown-txt: #323232;
     --darkbrown-txt2: #111111;
     --darkbrown-txt3: #101521;
+    --black-txt2: #212529;
+    --privacy-txt: #535353;
+    --privacy-title: #666666;
 }
 .btns{
     display: inline-block;
@@ -78,7 +82,7 @@ header{
     box-shadow: 0 0 8px 1rem rgb(218 213 213 / 30%);
 }
 .logo img{
-    width: 5rem;
+    width: 3rem;
 }
 .hamburger{
     font-size: 2rem;
@@ -109,13 +113,13 @@ header{
     background-size: cover;
 }
 .slidees:nth-child(1){
-    background-image: url('../img/Slider_Brand Strategy.png');
+    background-image: url('../img/Slider_Digital AD.png');
 }
 .slidees:nth-child(2){
     background-image: url('../img/Slider_Creative Management.png');
 }
 .slidees:nth-child(3){
-    background-image: url('../img/Slider_Digital AD.png');
+    background-image: url('../img/Slider_Brand Strategy.png');
 }
 .slidees:nth-child(4){
     background-image: url('../img/Slider_UIUX.png');
@@ -164,7 +168,7 @@ header{
 
 .card__slides__card__main{
     width: 15rem;
-    /* height: 100%; */
+    height: 25rem;
 }
 .showcase__card__slider_main{
     padding-left: 0 !important;
@@ -173,7 +177,7 @@ header{
     height: 100% !important;
 }
 #showcase__card__slider li{
-    /* height: 100%; */
+    height: 25rem;
 }
 .showcase__slider__card{
     max-height: 35rem;
@@ -508,7 +512,7 @@ header{
     background-image: url('../img/testimoniesbg.jpg');
     background-repeat: no-repeat;
     background-size: 400px 500px;
-    background-position: 90% 10%;
+    background-position: 90% 22.5%;
     padding-top: 15em ;
     margin-bottom: 4rem;
     margin-top: 4rem;
@@ -683,7 +687,7 @@ header{
 .product__content ul.nav__txt{
     justify-content: space-between;
     margin-bottom: 1rem !important;
-    padding: 0 3em;
+    padding: 0 4em;
 }
 .product__content ul.nav__txt li .nav-link{
     color: var(--lightgrey-txt);
@@ -918,7 +922,12 @@ scrollbar-width: none;  /* Firefox */
 }
 /* footer ------------------------------------------------------- */
 .footer__txt{
+    color: var(--black-txt2);
     font-size: .9rem;
+}
+.footer__txt:hover,
+.footer__txt:focus{
+    color: var(--black-txt2);
 }
 .footer__social__list .social__icons + .social__icons{
     margin-left: 1rem;
@@ -927,6 +936,51 @@ scrollbar-width: none;  /* Firefox */
     color: var(--black-txt);
     font-size: 1.2rem;
 }
+/* privacy ------------------------------------------------------ */
+#privacy{
+    padding-top: 2em;
+}
+#privacy .row{
+    margin: 2rem 0;
+}
+#privacy .media i{
+    margin-top: .35rem;
+    margin-right: .7rem;
+}
+#privacy ul .media + .media{
+    margin-top: .7rem;
+}
+
+#privacy .privacy_link{
+    color: var(--lightblue);
+    transition: color .3s;
+}
+#privacy .privacy_link:hover,
+#privacy .privacy_link:focus{
+    text-decoration: none;
+    color: var(--black-txt2);
+}
+#privacy .pricay_title{
+    color: var(--privacy-title);
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: .6rem;
+}
+#privacy .privacy_text{
+    font-size: .92rem;
+    color: var(--privacy-txt);
+    list-style: none;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+#privacy .privacy_list{
+    padding: 0;
+}
+#privacy .privacy_list li + li{
+    margin-top: .4rem;
+}
+
 /* Updated Bootstrap Css ---------------------------------------- */
 
 
@@ -957,7 +1011,10 @@ scrollbar-width: none;  /* Firefox */
         flex: 0 0 31.333333%  !important;
         max-width: 31.333333%  !important;
     }
-    
+    /* privacy */
+    #privacy .privacy_pd_x{
+        padding: 0 6.4em;
+    }
 
 }
 /* Responsive Large Tab*/
@@ -994,6 +1051,11 @@ scrollbar-width: none;  /* Firefox */
     }
     .p__card__link {
         font-size: .9rem;
+    }
+    /* privacy */
+    #privacy .pricay_title,
+    #privacy .privacy_text{
+        text-align: center;
     }
     
 }

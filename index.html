@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ad Partner - Digital Ad Agency</title>
+     <!-- Fav Icon -->
+     <link rel="icon" href="./img/logoblue_fav.png">
+     <!-- Style Sheets -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/lightslider.css">
@@ -26,7 +29,7 @@
     <header class="py-3 sticky-top">
         <div class="container">
             <div class="header__main d-flex align-items-center justify-content-between">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="./img/logoblue.png" alt="">
                 </a>
                 <div class="header__nav__main">
@@ -75,7 +78,6 @@
         </div>
     </header>
     <!-- header end -->
-
     <!-- showcase -->
     <div id="service" class="container--showcase showcase__main mb-4 showcase__slider">
         <div class="carousel slide showcase__inner" data-ride="carousel" id="slider1">
@@ -87,7 +89,13 @@
                 <li data-target="#slider1" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner showcase__inner">
-                <div class="carousel-item active showcase__inner slidees">
+                <div class="carousel-item slidees active">
+                    <!-- <img class="d-block img-fluid" src="./img/Slider_Digital AD.png" alt="Third slide"> -->
+                    <!-- <div class="carousel-caption w-100 showcase__slider__content">
+                        <h2>Digital -<br> Advaticement .</h2>
+                    </div> -->
+                </div>
+                <div class="carousel-item slidees">
                     <!-- <img class="d-block img-fluid" src="./img/Slider_Brand Strategy.png" alt="First slide"> -->
                     <!-- <div class="carousel-caption w-100 showcase__slider__content">
                         <h2>Branding -<br> Strategy .</h2>
@@ -99,12 +107,7 @@
                         <h2>Branding -<br> Management .</h2>
                     </div> -->
                 </div>
-                <div class="carousel-item slidees">
-                    <!-- <img class="d-block img-fluid" src="./img/Slider_Digital AD.png" alt="Third slide"> -->
-                    <!-- <div class="carousel-caption w-100 showcase__slider__content">
-                        <h2>Digital -<br> Advaticement .</h2>
-                    </div> -->
-                </div>
+               
                 <div class="carousel-item slidees">
                     <!-- <img class="d-block img-fluid" src="./img/Slider_UIUX.png" alt="fourth slide"> -->
                     <!-- <div class="carousel-caption w-100 showcase__slider__content">
@@ -114,7 +117,6 @@
             </div>
         </div>
     </div>
-
     <div class="showcase__content container mb-5">
         <div class="showcase__content__main py-5">
             <h2 class="showcase__title text-center pt-4 pb-3">Ad Partner is your strategic growth partner for your business to help you improve business outcomes.
@@ -206,7 +208,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="form__group--animate-label mb-3">
-                                    <textarea class="sc_desc w-100" name="sc_desc" id="sc_desc" cols="10" rows="8"
+                                    <textarea class="sc_desc w-100" name="sc_desc" id="sc_desc" cols="10" rows="9"
                                 required="required"></textarea>
                                     <label class="sc_desc" for="sc_desc">Email</label>
                                 </div>
@@ -225,8 +227,6 @@
        
     </div>
     <!-- showcase end -->
-
-
     <!-- product -->
     <div id="product" class="product">
         <div class="container">
@@ -239,13 +239,9 @@
                         <a href="#logo" class="nav-link active first nav__links" id="logo" role="tab" data-toggle="pill"
                             aria-selected="true" aria-controls="" onclick="changeMenu('first')">LOGO</a>
                     </li> -->
+                   
                     <li class="nav-item">
-                        <a href="#mobileapp" class="nav-link active second nav__links" id="mobile-app" role="tab"
-                            data-toggle="pill" aria-selected="false" aria-controls=""
-                            onclick="changeMenu('second')">MOBILE APPS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#uiux" class="nav-link third nav__links" id="ui-ux" role="tab" data-toggle="pill"
+                        <a href="#uiux" class="nav-link third nav__links active" id="ui-ux" role="tab" data-toggle="pill"
                             aria-selected="false" aria-controls="" onclick="changeMenu('third')">UI/UX</a>
                     </li>
                     <li class="nav-item">
@@ -253,146 +249,15 @@
                             data-toggle="pill" aria-selected="false" aria-controls=""
                             onclick="changeMenu('fourth')">WEBSITES</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#mobileapp" class="nav-link second nav__links" id="mobile-app" role="tab"
+                            data-toggle="pill" aria-selected="false" aria-controls=""
+                            onclick="changeMenu('second')">MOBILE APPS</a>
+                    </li>
                 </ul>
-                <div class="tab-content" id="NavContent">
-                    
-                    <div class="tab-pane fade show active second" id="mobileapp" role="tabpanel" aria-labelledby="mobile-app">
-                         <div class="main___product__card row">
-                            <div class="col-6 col-md-4 product__col">
-                                <div class="product__card">
-                                    <div class="product__card__img">
-                                        <img src="./img/pi1.jpg" alt="product img">
-                                    </div>
-                                    <div class="product__card__body">
-                                        <h3 class="product__card__title">Google Design Project .</h3>
-                                        <div class="row">
-                                            <div class="col-6 ">
-                                                <button class="p__card__link ep"
-                                                    onclick="productDesFunc('./img/pi1.jpg')">Explore Project</button>
-                                            </div>
-                                            <div class="col-6 padding-is">
-                                                <a class="p__card__link el" href="#">Explore Link</a>
-                                            </div>
-                                            <div class="col-6">
-                                                <button class="p__card__link pd" >Project Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 product__col">
-                                <div class="product__card">
-                                    <div class="product__card__img">
-                                        <img src="./img/pi2.jpg" alt="product img">
-                                    </div>
-                                    <div class="product__card__body">
-                                        <h3 class="product__card__title">Google Design Project .</h3>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <button class="p__card__link ep" 
-                                                    onclick="productDesFunc('./img/pi2.jpg')">Explore Project</button>
-                                            </div>
-                                            <div class="col-6 padding-is">
-                                                <a class="p__card__link el" href="#">Explore Link</a>
-                                            </div>
-                                            <div class="col-6">
-                                                <button class="p__card__link pd" href="#">Project Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 product__col">
-                                <div class="product__card">
-                                    <div class="product__card__img">
-                                        <img src="./img/pi3.jpg" alt="product img">
-                                    </div>
-                                    <div class="product__card__body">
-                                        <h3 class="product__card__title">Google Design Project .</h3>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <button class="p__card__link ep"
-                                                    onclick="productDesFunc('./img/pi3.jpg')">Explore Project</button>
-                                            </div>
-                                            <div class="col-6 padding-is">
-                                                <a class="p__card__link el" href="#">Explore Link</a>
-                                            </div>
-                                            <div class="col-6">
-                                                <button class="p__card__link pd" >Project Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 product__col">
-                                <div class="product__card">
-                                    <div class="product__card__img">
-                                        <img src="./img/pi4.jpg" alt="product img">
-                                    </div>
-                                    <div class="product__card__body">
-                                        <h3 class="product__card__title">Google Design Project .</h3>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <button class="p__card__link ep" 
-                                                    onclick="productDesFunc('./img/pi4.jpg')">Explore Project</button>
-                                            </div>
-                                            <div class="col-6 padding-is">
-                                                <a class="p__card__link el" href="#">Explore Link</a>
-                                            </div>
-                                            <div class="col-6">
-                                                <button class="p__card__link pd" >Project Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 product__col">
-                                <div class="product__card">
-                                    <div class="product__card__img">
-                                        <img src="./img/pi5.jpg" alt="product img">
-                                    </div>
-                                    <div class="product__card__body">
-                                        <h3 class="product__card__title">Google Design Project .</h3>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <button class="p__card__link ep"
-                                                    onclick="productDesFunc('./img/pi5.jpg')">Explore Project</button>
-                                            </div>
-                                            <div class="col-6 padding-is">
-                                                <a class="p__card__link el" href="#">Explore Link</a>
-                                            </div>
-                                            <div class="col-6">
-                                                <button class="p__card__link pd">Project Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 product__col">
-                                <div class="product__card">
-                                    <div class="product__card__img">
-                                        <img src="./img/s1.jpg" alt="product img">
-                                    </div>
-                                    <div class="product__card__body">
-                                        <h3 class="product__card__title">Google Design Project .</h3>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <button class="p__card__link ep" 
-                                                    onclick="productDesFunc('./img/s1.jpg')">Explore Project</button>
-                                            </div>
-                                            <div class="col-6 padding-is">
-                                                <a class="p__card__link el" href="#">Explore Link</a>
-                                            </div>
-                                            <div class="col-6">
-                                                <button class="p__card__link pd" >Project Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade third" id="uiux" role="tabpanel" aria-labelledby="ui-ux">
+                <div class="tab-content" id="NavContent">      
+                   
+                    <div class="tab-pane fade third show active" id="uiux" role="tabpanel" aria-labelledby="ui-ux">
                         <div class="main___product__card row">
                             <div class="col-6 col-md-4 product__col">
                                 <div class="product__card">
@@ -528,7 +393,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade  fourth" id="website" role="tabpanel" aria-labelledby="website">
+                    <div class="tab-pane fade fourth" id="website" role="tabpanel" aria-labelledby="website">
                          <div class="main___product__card row">
                             <div class="col-6 col-md-4 product__col">
                                 <div class="product__card">
@@ -664,21 +529,159 @@
                             </div> -->
                         </div>
                     </div>
+                    <div class="tab-pane fade   second" id="mobileapp" role="tabpanel" aria-labelledby="mobile-app">
+                        <div class="main___product__card row">
+                           <div class="col-6 col-md-4 product__col">
+                               <div class="product__card">
+                                   <div class="product__card__img">
+                                       <img src="./img/pi1.jpg" alt="product img">
+                                   </div>
+                                   <div class="product__card__body">
+                                       <h3 class="product__card__title">Google Design Project .</h3>
+                                       <div class="row">
+                                           <div class="col-6 ">
+                                               <button class="p__card__link ep"
+                                                   onclick="productDesFunc('./img/pi1.jpg')">Explore Project</button>
+                                           </div>
+                                           <div class="col-6 padding-is">
+                                               <a class="p__card__link el" href="#">Explore Link</a>
+                                           </div>
+                                           <div class="col-6">
+                                               <button class="p__card__link pd" >Project Details</button>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-6 col-md-4 product__col">
+                               <div class="product__card">
+                                   <div class="product__card__img">
+                                       <img src="./img/pi2.jpg" alt="product img">
+                                   </div>
+                                   <div class="product__card__body">
+                                       <h3 class="product__card__title">Google Design Project .</h3>
+                                       <div class="row">
+                                           <div class="col-6">
+                                               <button class="p__card__link ep" 
+                                                   onclick="productDesFunc('./img/pi2.jpg')">Explore Project</button>
+                                           </div>
+                                           <div class="col-6 padding-is">
+                                               <a class="p__card__link el" href="#">Explore Link</a>
+                                           </div>
+                                           <div class="col-6">
+                                               <button class="p__card__link pd" href="#">Project Details</button>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-6 col-md-4 product__col">
+                               <div class="product__card">
+                                   <div class="product__card__img">
+                                       <img src="./img/pi3.jpg" alt="product img">
+                                   </div>
+                                   <div class="product__card__body">
+                                       <h3 class="product__card__title">Google Design Project .</h3>
+                                       <div class="row">
+                                           <div class="col-6">
+                                               <button class="p__card__link ep"
+                                                   onclick="productDesFunc('./img/pi3.jpg')">Explore Project</button>
+                                           </div>
+                                           <div class="col-6 padding-is">
+                                               <a class="p__card__link el" href="#">Explore Link</a>
+                                           </div>
+                                           <div class="col-6">
+                                               <button class="p__card__link pd" >Project Details</button>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-6 col-md-4 product__col">
+                               <div class="product__card">
+                                   <div class="product__card__img">
+                                       <img src="./img/pi4.jpg" alt="product img">
+                                   </div>
+                                   <div class="product__card__body">
+                                       <h3 class="product__card__title">Google Design Project .</h3>
+                                       <div class="row">
+                                           <div class="col-6">
+                                               <button class="p__card__link ep" 
+                                                   onclick="productDesFunc('./img/pi4.jpg')">Explore Project</button>
+                                           </div>
+                                           <div class="col-6 padding-is">
+                                               <a class="p__card__link el" href="#">Explore Link</a>
+                                           </div>
+                                           <div class="col-6">
+                                               <button class="p__card__link pd" >Project Details</button>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-6 col-md-4 product__col">
+                               <div class="product__card">
+                                   <div class="product__card__img">
+                                       <img src="./img/pi5.jpg" alt="product img">
+                                   </div>
+                                   <div class="product__card__body">
+                                       <h3 class="product__card__title">Google Design Project .</h3>
+                                       <div class="row">
+                                           <div class="col-6">
+                                               <button class="p__card__link ep"
+                                                   onclick="productDesFunc('./img/pi5.jpg')">Explore Project</button>
+                                           </div>
+                                           <div class="col-6 padding-is">
+                                               <a class="p__card__link el" href="#">Explore Link</a>
+                                           </div>
+                                           <div class="col-6">
+                                               <button class="p__card__link pd">Project Details</button>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-6 col-md-4 product__col">
+                               <div class="product__card">
+                                   <div class="product__card__img">
+                                       <img src="./img/s1.jpg" alt="product img">
+                                   </div>
+                                   <div class="product__card__body">
+                                       <h3 class="product__card__title">Google Design Project .</h3>
+                                       <div class="row">
+                                           <div class="col-6">
+                                               <button class="p__card__link ep" 
+                                                   onclick="productDesFunc('./img/s1.jpg')">Explore Project</button>
+                                           </div>
+                                           <div class="col-6 padding-is">
+                                               <a class="p__card__link el" href="#">Explore Link</a>
+                                           </div>
+                                           <div class="col-6">
+                                               <button class="p__card__link pd" >Project Details</button>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   
                 </div>
                 <ul class="nav nav__dots" id="MyNav">
+                   
                     <li class="nav-item">
-                        <a href="#mobileapp" class="nav-link active dots second nav__links" id="mobile-app" role="tab"
-                            data-toggle="pill" aria-selected="false" aria-controls=""
-                            onclick="changeMenu('second')"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#uiux" class="nav-link dots third nav__links" id="ui-ux" role="tab" data-toggle="pill"
+                        <a href="#uiux" class="nav-link dots third nav__links active" id="ui-ux" role="tab" data-toggle="pill"
                             aria-selected="false" aria-controls="" onclick="changeMenu('third')"></a>
                     </li>
                     <li class="nav-item">
                         <a href="#website" class="nav-link dots fourth nav__links" id="websites" role="tab"
                             data-toggle="pill" aria-selected="false" aria-controls=""
                             onclick="changeMenu('fourth')"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#mobileapp" class="nav-link  dots second nav__links" id="mobile-app" role="tab"
+                            data-toggle="pill" aria-selected="false" aria-controls=""
+                            onclick="changeMenu('second')"></a>
                     </li>
                 </ul>
             </div>
@@ -737,8 +740,8 @@
         </div>
     </div>
     <!-- aboutus end -->
-     <!-- testimonies -->
-     <div id="testimonies" class="testimonies container--showcase">
+    <!-- testimonies -->
+    <div id="testimonies" class="testimonies container--showcase">
         <div class="main__testimonial">
             <div class="testimonies__content text-center">
                 <h1 class="testimonies__title">Our Customer's Love us</h1>
@@ -824,12 +827,12 @@
         </form>
     </div>
     <!-- contact end -->
-    <!-- footer -->
-    <footer class="container my-1">
+     <!-- footer -->
+     <footer class="container my-1">
         <div class="d-flex justify-content-between mt-5 mb-4 pt-5">
             <p class="footer__txt">Terms and Policies</p>
             <p class="footer__txt">Copyright © 2021 Ad Partner. All Rights Reserved.</p>
-            <p class="footer__txt">Cockies and Privacies</p>
+            <a class="footer__txt" href="./privacy.html">Cockies and Privacies</a>
         </div>
         <div class="footer__social__list d-flex justify-content-center pb-5">
             <a href="#" class="social__icons"><i class="fab fa-facebook-square"></i></a>
